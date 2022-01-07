@@ -114,6 +114,9 @@ notebooks:
     kind: S2021, LN, Notebook
     link: /notes/notebooks/18_reinforcement_learning/
     text: <p>Reinforcement Learning</p>
+  - md: notebooks/18_deep_neural_network/
+    kind: F2021, LN, md
+    link: /notes/notebooks/18_deep_neural_network/
 kind: Index
 search:
   content: true
