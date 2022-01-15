@@ -6,11 +6,11 @@ layout: content
 <ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#CNN-Architecture">CNN Architecture</a></li>
+<li><a href="#Fully-Connected-Layer">Fully Connected Layer</a></li>
 <li><a href="#Conv-Layer">Conv Layer</a></li>
 <li><a href="#Pooling">Pooling</a></li>
 <li><a href="#Padding">Padding</a></li>
 <li><a href="#Stride">Stride</a></li>
-<li><a href="#Fully-Connected-Layer">Fully Connected Layer</a></li>
 <li><a href="#Activation-Function">Activation Function</a></li>
 <li><a href="#Loss-Functions">Loss Functions</a></li>
 <li><a href="#The-output-size-of-Conv-Layer">The Output Size of Conv Layer</a></li>
@@ -20,7 +20,7 @@ layout: content
 <h2>Introduction</h2>
 <p>Deep learning is a subfield of machine learning that deals with algorithms inspired by the structure and function of the brain. Deep learning is a subset of machine learning, which is a part of artificial intelligence (AI).
 <img alt="" src="https://i.imgur.com/qhjJzDb.png"/></p>
-<p>CNN's are models to solve deep learning problems. Suppose that you have high-dimensional inputs such as images or videos. If we want to use MLPs, 2 (or more) dimensional inputs need to be converted to 1-dimensional vectors. This conversion increases the number of trainable parameters exponentially. Also, one important thing in these data is locality, it means that for example in an image, you can find features in near pixels (for examples corners and edges) but, far pixels can't give you efficient features. The solution for solving these problems is using CNNs.</p>
+<p>CNNs are models to solve deep learning problems. Suppose that you have high-dimensional inputs such as images or videos. If we want to use MLPs, 2 (or more) dimensional inputs need to be converted to 1-dimensional vectors. This conversion increases the number of trainable parameters exponentially. Also, one important thing in these data is locality, it means that for example in an image, you can find features in near pixels (for example corners and edges) but, distant pixels can't give you efficient features. The solution for solving these problems is using CNNs.</p>
 <h2>CNN Architecture</h2>
 <p>A CNN architecture is formed by a stack of distinct layers that transform the input volume into an output volume through a differentiable function. A few distinct types of layers are commonly used:</p>
 <ul>
@@ -43,7 +43,7 @@ layout: content
 <p>Fully Connected layers in neural networks are those layers where all the inputs from one layer are connected to every activation unit of the next layer. In most popular CNN models, the last few layers are fully connected layers that compile the data extracted by previous layers to form the final output. It is the second most time-consuming layer second to the Convolution Layer.
 <img alt="" src="https://i.imgur.com/3nItEgk.png"/></p>
 <h2>Conv Layer</h2>
-<p>This layer is the main difference between CNNs and MLPs. Convolution in the word refers to two operators between two functions. In mathematics convolution define as below:<br/>
+<p>This layer is the main difference between CNNs and MLPs. Convolution in the word refers to two operators between two functions. In mathematics convolution is defined as below:<br/>
 <img src="https://render.githubusercontent.com/render/math?math=(f * g)(t) := \int_{-\infty}^{\infty} f(\tau)g(t - \tau)d\tau"/><br/>
 In this image, you can see an example for functions of convolution and two other similar operators.</p>
 <figure>
